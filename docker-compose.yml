@@ -1,7 +1,7 @@
 screeps:
   build: .
   environment:
-    SCREEPS_STEAM_API_KEY: '11D7EA420E73720DA0C25CC7BBA38B58'
+    SCREEPS_STEAM_API_KEY: ''
     SCREEPS_HOST: '0.0.0.0'
     SCREEPS_CLI_HOST: '0.0.0.0'
     SCREEPS_PORT: '21025'
@@ -13,6 +13,6 @@ screeps:
     - '21025'
     - '21026'
   ports:
-    - '21025'
-    - '21026'
+    - '21025:21025'
+    - '21026:21026'
 

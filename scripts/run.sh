@@ -2,10 +2,8 @@
 set -e
 
 setEnvironmentVariable() {
-
     key=${1/SCREEPS_/}
     key=${key,,}
-
     echo "Updating $key to $2"
     sed -i "s/^$key.*/$key = $2/g" .screepsrc
 }
@@ -24,7 +22,5 @@ for _curVar in `env | grep SCREEPS_ | awk -F = '{print $1}'`;do
     setEnvironmentVariable $key $val
 done
 
-
-cat .screepsrc
-
+echo "Starting screeps..."
 screeps start
