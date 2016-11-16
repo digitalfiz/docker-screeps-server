@@ -1,5 +1,6 @@
 {
   "mods": [
+  	"health-check.js"
   ],
   "bots": {
     "simplebot": "node_modules/@screeps/simplebot/src"
