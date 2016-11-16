@@ -1,0 +1,18 @@
+screeps:
+  build: .
+  environment:
+    SCREEPS_STEAM_API_KEY: '11D7EA420E73720DA0C25CC7BBA38B58'
+    SCREEPS_HOST: '0.0.0.0'
+    SCREEPS_CLI_HOST: '0.0.0.0'
+    SCREEPS_PORT: '21025'
+    SCREEPS_CLI_PORT: '21026' # Defaults tp PORT+1
+    SCREEPS_SERVER_PASSWORD: ''
+    SCREEPS_RUNNERS_CNT: '2'
+    SCREEPS_PROCESSORS_CNT: '2'
+  expose:
+    - '21025'
+    - '21026'
+  ports:
+    - '21025'
+    - '21026'
+
